@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>富贵er李的博客-北京的三月飘雪⛄</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../../images/avatar.png">
+  <link rel="stylesheet" href="../../styles/main.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <meta name="description" content="真冷，****北京怎么马上立春了还下雪" />
+  <meta name="keywords" content="Gridea" />
+</head>
+
+<body>
+  <div id="app" class="main">
+
+    <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="top-container" data-aos="fade-right">
+        <div class="top-header-container">
+          <a class="site-title-container" href="../../index.html">
+            <img src="../../images/avatar.png" class="site-logo">
+            <h1 class="site-title">李富贵</h1>
+          </a>
+          <div class="menu-btn" @click="menuVisible = !menuVisible">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div>
+          <a href="../../index.html" class="site-nav">
+            博客
+          </a>
+          <a href="../about/index.html" class="site-nav">
+            关于
+          </a>
+          <a href="../../archives/index.html" class="site-nav">
+            归档
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+        <div class="site-description">
+          世事洞明皆学问，人情练达即文章。
+        </div>
+        <a href="https://twitter.com/skooch02" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.cn/injobs/in/%E4%BA%9A%E8%B5%9F-%E6%9D%8E-ab3102214" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCc19g5uIb_-YTQPWmb8eRMg" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+
+    <div class="main-container">
+      <div class="content-container" data-aos="fade-up">
+        <div class="post-detail">
+          <h2 class="post-title">北京的三月飘雪⛄</h2>
+          <div class="post-date">2022-03-18</div>
+
+          <div class="feature-container" style="background-image: url('../../post-images/snowdayme.jpg')">
+          </div>
+
+          <div class="post-content" v-pre>
+            <p><strong>坐标北京，正在下雪</strong>前两天气温应该还有15°上下，今天降到了3°。小组四个人不约而同地翘掉了上午的Java课。</p>
+            <p>封面照片里我在中间，正在研究性学习大鹅的叫声，大抵是咡~啊——（第一声要向下压，第二声要足够大，感情饱满，并且声调上扬），已经会和大鹅交流了🤗。某位好朋友将这张逗大鹅的照片发到朋友圈，被男同盯上了🤢，希望他是对大鹅感兴趣。</p>
+            <p>在宿舍练泽丽，遇到一个莫甘娜辅助，Q无虚发的那种，基本上Q到就杀。正好对面VN和杰斯要换线，VN去打上单，杰斯和石头人在下路坐牢🤤，舒服渡过对线期直接Carry全场捏。（这英雄前期对线对不好，出不来三件套，后期太刮痧了；前期打好，后期打团是真的舒服）</p>
+            <div class="feature-container" style="background-image: url('../../post-images/zeli.jpg')"></div>
+            <div class="post-miaoshu">附上难得的战绩图，我很菜，不要喷，你喷了我也不知道</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="application/javascript">
+    AOS.init();
+    var app = new Vue({
+      el: '#app',
+      data: {
+        menuVisible: false,
+      },
+    })
+  </script>
+</body>
+
+</html>

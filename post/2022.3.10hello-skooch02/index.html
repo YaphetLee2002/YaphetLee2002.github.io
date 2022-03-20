@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>富贵er李的博客-Hello 李富贵!</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../../images/avatar.png">
+  <link rel="stylesheet" href="../../styles/main.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <meta name="description" content="👏 Welcome to 李富贵's self-blog!
+    ✍️ 我会在自己的博客网站上写下自己的生活轨迹、学习心得等闲言碎语..." />
+  <meta name="keywords" content="Gridea" />
+</head>
+
+<body>
+  <div id="app" class="main">
+
+    <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="top-container" data-aos="fade-right">
+        <div class="top-header-container">
+          <a class="site-title-container" href="../../index.html">
+            <img src="../../images/avatar.png" class="site-logo">
+            <h1 class="site-title">李富贵</h1>
+          </a>
+          <div class="menu-btn" @click="menuVisible = !menuVisible">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div>
+          <a href="../../index.html" class="site-nav">
+            博客
+          </a>
+          <a href="../about/index.html" class="site-nav">
+            关于
+          </a>
+          <a href="../../archives/index.html" class="site-nav">
+            归档
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+        <div class="site-description">
+          世事洞明皆学问，人情练达即文章。
+        </div>
+        <a href="https://twitter.com/skooch02" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.cn/injobs/in/%E4%BA%9A%E8%B5%9F-%E6%9D%8E-ab3102214" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCc19g5uIb_-YTQPWmb8eRMg" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+
+    <div class="main-container">
+      <div class="content-container" data-aos="fade-up">
+        <div class="post-detail">
+          <h2 class="post-title">Hello 李富贵!</h2>
+          <div class="post-date">2022-03-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鬼知道我写不写得下去</div>
+
+          <div class="feature-container" style="background-image: url('../../post-images/hello-skooch02.png')">
+          </div>
+
+          <div class="post-content" v-pre>
+            <p>🎆Welcome to <strong>李富贵</strong>'s self-blog!<br>
+              ✍️ 我会在自己的博客网站上写下自己的生活轨迹、学习心得等垃圾内容</p>
+            <p>👍🏻感谢你进入这个网站，为我增加了一个点击量，这对我没有什么意义；因为我没有钱去买服务器，所以你无法在此处与我互动。</p>
+            <p>似乎还是有点互动的机会的，比如点击<a href="https://skooch02.github.io/Eat-LYY/EatKano/index.html">吃掉LYY</a>来进入一个将我吃掉的小游戏，尽可能在10秒内吃掉更多的我，祝你好运😁</p>
+            <p>上面的图片来自无版权摄影图片网站<a href="https://pixabay.com/">Pixabay</a>。这个网站有许多优秀的摄影作品，并且无版权可商用，感谢这个网站(〃￣︶￣)人(￣︶￣〃)。</p>
+
+            <p>另外，我必须感谢Gridea软件为我们提供的资源和建站模板，这里是<a href="https://gridea.dev/">Gridea</a>的主页，这个网站本应该建立的更加轻松，但由于某些未知的网络问题❌，我无法建立稳定的远程链接🔴，因此纯手打的内容⌨️占据了不小的篇幅，阿西八。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="application/javascript">
+    AOS.init();
+    var app = new Vue({
+      el: '#app',
+      data: {
+        menuVisible: false,
+      },
+    })
+  </script>
+</body>
+
+</html>

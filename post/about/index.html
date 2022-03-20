@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>富贵er李的博客-关于</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../../images/avatar.png">
+  <link rel="stylesheet" href="../../styles/main.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <meta name="description" content="
+欢迎来到第九组的博客网站！🤝
+
+🏠 关于本站
+👨‍💻 博主是谁
+📬 联系博主
+..." />
+  <meta name="keywords" content="" />
+</head>
+
+<body>
+  <div id="app" class="main">
+
+    <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="top-container" data-aos="fade-right">
+        <div class="top-header-container">
+          <a class="site-title-container" href="../../index.html">
+            <img src="../../images/avatar.png" class="site-logo">
+            <h1 class="site-title">李富贵</h1>
+          </a>
+          <div class="menu-btn" @click="menuVisible = !menuVisible">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div>
+          <a href="../../index.html" class="site-nav">
+            博客
+          </a>
+          <a href="#" class="site-nav">
+            关于
+          </a>
+          <a href="../../archives/index.html" class="site-nav">
+            归档
+          </a>
+
+        </div>
+      </div>
+
+      <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+        <div class="site-description">
+          世事洞明皆学问，人情练达即文章。
+        </div>
+        <a href="https://twitter.com/skooch02" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.cn/injobs/in/%E4%BA%9A%E8%B5%9F-%E6%9D%8E-ab3102214" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCc19g5uIb_-YTQPWmb8eRMg" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="content-container" data-aos="fade-up">
+        <div class="post-detail">
+          <h2 class="post-title">关于</h2>
+          <div class="post-date">2022-03-17</div>
+
+          <div class="post-content" v-pre>
+            <blockquote>
+              <p>欢迎来到的博客网站！🤝</p>
+            </blockquote>
+            <h2 id="关于本组">🏠 关于本站</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;这个网站<strong>完全用于</strong>自己吐槽并发送一些有趣的事物😸。所有内容纯粹为了自己记录而发，如果感到不适请点击右上角推出（移动端请点击返回），李富贵会感谢您的支持与配合</p>
+            <h2 id="组长是谁">👨‍💻 博主是谁</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;博主&nbsp;<strong>李富贵</strong>，2002年出生于某高考大省，当前是北京市某学高校计算机💻学院在读大学生🧑🏻‍🎓，半个吉他🎸指弹玩家+英雄联盟癌症分段病号+运动不爱好者，是中国共产党的坚实拥护者和国家利益维护者。
+              目前英雄联盟白银分段锁死，吉他指弹仍然学不会AM技巧，迫于体育课的压力而跑步争取分数，就是这样。</p>
+            <p>这里是我的<a href="https://github.com/RE-UML-9th/digital-villages-governance-platform">Github</a>主页！<br></p>
+            <h2 id="联系博主">📬 联系博主</h2>
+            <p>以下是博主的联系方式：<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>QQ邮箱</strong>：lyy2002@vip.qq.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>Gmail</strong>：lyy2002.skooch02@gmail.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>网易邮箱</strong>：yurinli2002@163.com<br>
+            如果您对我的博客有任何意见或建议，请先憋着；如果憋不住，请通过上述方式联系我&nbsp;:&nbsp;)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="application/javascript">
+    AOS.init();
+    var app = new Vue({
+      el: '#app',
+      data: {
+        menuVisible: false,
+      },
+    })
+  </script>
+</body>
+</html>

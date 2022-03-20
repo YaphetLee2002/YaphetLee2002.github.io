@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>富贵er李的博客-博客归档</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../images/avatar.png">
+  <link rel="stylesheet" href="../styles/main.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+  <meta name="description" content="世事洞明皆学问，人情练达即文章">
+</head>
+
+<body>
+  <div id="app" class="main">
+
+    <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="top-container" data-aos="fade-right">
+        <div class="top-header-container">
+          <a class="site-title-container" href="../index.html">
+            <img src="../images/avatar.png" class="site-logo">
+            <h1 class="site-title">李富贵</h1>
+          </a>
+          <div class="menu-btn" @click="menuVisible = !menuVisible">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div>
+          <a href="../index.html" class="site-nav">
+            博客
+          </a>
+          <a href="../post/about/index.html" class="site-nav">
+            关于
+          </a>
+          <a href="#" class="site-nav">
+            归档
+          </a>
+
+        </div>
+      </div>
+
+
+      <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+        <div class="site-description">
+          世事洞明皆学问，人情练达即文章。
+        </div>
+        <a href="https://twitter.com/skooch02" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.cn/injobs/in/%E4%BA%9A%E8%B5%9F-%E6%9D%8E-ab3102214" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/channel/UCc19g5uIb_-YTQPWmb8eRMg" class="fa fa-youtube"></a>
+      </div>
+    </div>
+
+
+    <div class="main-container">
+      <div class="content-container" data-aos="fade-up">
+
+
+        <h2 class="archives-title">博客归档</h2>
+        <div class="archives-container">
+
+          <h2 class="year" data-aos="fade-in" data-aos-delay="500">2022</h2>
+
+          <article class="post">
+            <a href="../post/2022.3.20ruozhi/index.html">
+              <h2 class="post-title">
+                (转载)弱智吧2021年度130则
+              </h2>
+            </a>
+          </article>
+
+          <article class="post">
+            <a href="../post/2022.3.18snowday/index.html">
+              <h2 class="post-title">
+                北京的三月飘雪⛄
+              </h2>
+            </a>
+          </article>
+
+          <article class="post">
+            <a href="../post/2022.3.16laotan-suancai/index.html">
+              <h2 class="post-title">
+                老坛酸菜牛肉面🥵🥵
+              </h2>
+            </a>
+          </article>
+
+          <article class="post">
+            <a href="../post/2022.3.10hello-skooch02/index.html">
+              <h2 class="post-title">
+                Hello 李富贵！
+              </h2>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="pagination-container">
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="application/javascript">
+
+    AOS.init();
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        menuVisible: false,
+      },
+    })
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
